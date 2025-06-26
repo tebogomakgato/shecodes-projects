@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <style>
+      p {
+        text-align: center;
+        font-size: 20px;
+      }
+      h1 {
+        color: #1a64d6;
+        text-align: center;
+        font-size: 42px;
+      }
+      h2 {
+        text-align: center;
+        font-weight: normal;
+        font-size: 34px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 20px;
+        background-color: #0118d8;
+        border-radius: 50px;
+        cursor: pointer;
+        color: #ffffff;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0, 0);
+      }
+      button:hover {
+        background: #ffffff;
+        color: #0118d8;
+      }
+      .container {
+        display: block;
+        margin: 0 auto 30px auto;
+        text-align: center;
+        font-size: 20px;
+      }
+      .container:hover {
+        padding: 3px 4px;
+        max-width: 200px;
+        background: #fdf7f4;
+        transition: all 200ms ease-in-out;
+        border-radius: 4px;
+      }
+      .status {
+        display: block;
+        margin: 0 auto 30px auto;
+        text-align: center;
+        font-size: 20px;
+      }
+      .status:hover {
+        padding: 3px 4px;
+        max-width: 200px;
+        background: #fdf7f4;
+        transition: all 200ms ease-in-out;
+        border-radius: 4px;
+      }
+      .update {
+        display: block;
+        margin: 0 auto 30px auto;
+        text-align: center;
+        font-size: 20px;
+      }
+      .update:hover {
+        padding: 3px 4px;
+        max-width: 200px;
+        background: #fdf7f4;
+        transition: all 200ms ease-in-out;
+        border-radius: 4px;
+      }
+      .bold-temp {
+        font-weight: bold;
+      }
+      .coder {
+        text-align: center;
+        font-size: 18px;
+      }
+      .bold {
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <p>🌤️</p>
+    <h1>Currenly 21° in Tokyo</h1>
+    <h2>13° / <span class="bold-temp">23°</span></h2>
+    <div class="container">
+      <strong>
+        <div>🌧️Tomorrow</div>
+        <br />
+      </strong>
+      <div>10° / <span class="bold">22°</span></div>
+    </div>
+    <div class="status">
+      <strong>
+        <div>🌥️Saturday</div>
+      </strong>
+      <br />
+      <div>15° / <span class="bold">17°</span></div>
+    </div>
+    <div class="update">
+      <strong>
+        <div>☀️Sunday</div>
+      </strong>
+      <br />
+      <div>25° / <span class="bold">28°</span></div>
+    </div>
+    <button>Change city</button>
+    <div class="coder">coded by Tebogo Makgato</div>
+  </body>
+</html>
