@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Lovers</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #0092ca;
+      }
+      h2 {
+        text-align: center;
+        color: #00bbf0;
+        font-weight: 100;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      div {
+        background: #f5e1da;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 400px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        color: #005689;
+        font-size: 18px;
+        background: #d5eeff;
+        padding: 4px;
+        border-radius: 10px;
+        box-shadow: 5px 5-x 10px rgb(0, 0, 0, 0.3);
+      }
+      button:hover {
+        background: #ff895d;
+        color: #1d1716;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+      }
+      p {
+        text-align: center;
+        line-height: 1.5;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 4px;
+        border: 4px solid blueviolet;
+        border-radius: 4px;
+      }
+      a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      span {
+        color: #55e0a3;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Tebogo's Music Corner</h1>
+      <h2>Let music be the peace to guide your soul</h2>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTh_tbAtVLNyFe_NcSSslz7uGe-zXoAyombw&s"
+      />
+      <p>
+        <em> 🎶 For the Love of Music! 🎧 <br /></em> Tap the link, feel the
+        vibe, and let the rhythm take over.<br />
+        <span>Your favorite song is one click away </span><br /><strong
+          >Enjoy!</strong
+        >
+        🔥
+      </p>
+      <button>play</button><br />
+      <a href="https://music.youtube.com/" target="_blank">the music way</a>
+      <br />
+      <hr />
+      <p><em>Coded by Tebogo Makgato</em></p>
+    </div>
+    <script>
+      function play() {
+        let name = prompt("Enter your first name?");
+        let surname = prompt("Enter your last name?");
+        let song = prompt("enter the name of your favorate song");
+        alert(
+          "Thanks " + name + " " + surname + " Click the link to enjoy " + song
+        );
+        let music = prompt("Are you enjoying our music?");
+        let h1 = document.querySelector("h1");
+        if (music.toLowerCase() === "yes") {
+          h1.innerHTML =
+            name +
+            " " +
+            surname +
+            " 😆We’re happy you’re enjoying the music — keep the vibes alive!❤️";
+        } else {
+          h1.innerHTML =
+            "😔Sorry " +
+            name +
+            " " +
+            surname +
+            ", we couldn’t satisfy your taste — we still appreciate you!🤘";
+        }
+      }
+      let playButton = document.querySelector("button");
+      playButton.addEventListener("click", play);
+    </script>
+  </body>
+</html>
