@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading - My hobby📚</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      body {
+        background-image: url("https://media.istockphoto.com/id/1363364338/photo/bookshelf-background-with-stacked-books.jpg?s=612x612&w=0&k=20&c=55XJTVYW8Aqa21YIrtzoAqWcqvfS7apw2b9CQtxPJSA=");
+        background-size: contain;
+      }
+      .website {
+        display: block;
+        margin: 0 auto;
+      }
+
+      img {
+        max-width: 100%;
+        margin-bottom: 2px;
+      }
+      footer {
+        text-align: center;
+        padding: 15px;
+      }
+
+      .themeButton {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        color: white;
+        background: black;
+        font-size: 16px;
+        transition: all 150ms ease-in-out;
+        border-radius: 12px;
+        padding: 20 8px;
+      }
+      .themeButton:hover {
+        cursor: pointer;
+        color: white;
+        background: #9d53c3;
+      }
+      .project {
+        margin: 0 auto;
+        max-width: 600px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .link-image {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .link-image:hover {
+        filter: blur(2px);
+        transform: scale(1.1);
+      }
+      .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 8px;
+      }
+      .grid img {
+        width: 100%;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+      }
+      .grid img:hover {
+        transform: scale(2);
+      }
+      .dark {
+        background: radial-gradient(
+          circle at 24.1% 68.8%,
+          rgb(50, 50, 50) 0%,
+          rgb(0, 0, 0) 99.4%
+        );
+        color: white;
+      }
+      .dark .project {
+        background: radial-gradient(
+          780px at 37.8% 100.3%,
+          rgb(19, 55, 115) 2.2%,
+          rgb(32, 7, 80) 20.2%,
+          rgb(27, 88, 111) 58.6%,
+          rgb(115, 88, 44) 75%,
+          rgb(99, 19, 90) 89.6%,
+          rgb(12, 51, 76) 96.1%
+        );
+      }
+      .dark a {
+        color: plum;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="themeButton">Dark Theme</button>
+    <div class="project">
+      <h1>Reading📖</h1>
+      <h2>My favorite hobby</h2>
+      <a href="https://openlibrary.org/" target="_blank">
+        <img
+          src="https://d.newsweek.com/en/full/2265611/young-adult-woman-library.jpg?w=1600&h=1600&q=88&f=077873a5de6b06625700e564685fcfde"
+          alt=""
+          width="600"
+          height="400"
+          class="link-image"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWqnb6ZF23nX_07Uepn4EWIDr7d_cUXCoDFA&s"
+          alt=""
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfnaurjE7rOjwFMC9DQgYLOAbNVfK5hznT-A&s"
+          alt=""
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi0DnNxJwtZAaprnQgF1MZdgW642scMhTI-Q&s"
+          alt=""
+        />
+        <img
+          src="https://www.salvacon.com/wp-content/uploads/2020/06/woman-reading-a-book-beside-the-window-1031588.jpg"
+          alt=""
+        />
+      </div>
+      <p>
+        Reading books offers a multitude of benefits for individuals of all
+        ages, impacting cognitive, emotional, and even physical well-being. It
+        enhances vocabulary, improves memory, boosts imagination, and promotes
+        critical thinking skills. Additionally, reading can reduce stress,
+        enhance empathy, and provide a healthy escape from daily pressures.
+      </p>
+      <a
+        class="website"
+        href="https://www.goodreads.com/shelf/show/free-online"
+        target="_blank"
+        >Start Reading</a
+      >
+    </div>
+    <footer>
+      Coded with ❤️ by
+      <a href="https://github.com/tebogomakgato" target="_blank"
+        >Tebogo Makgato</a
+      >
+    </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
